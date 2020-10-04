@@ -10,10 +10,7 @@ var img = [
     "img_made/photo_2020-10-04_22-16-16.jpg",
     "img_made/photo_2020-10-04_22-20-56.jpg",
     "img_made/photo_2020-10-04_22-21-01.jpg",
-    "img_made/photo_2020-10-04_22-21-02.jpg",
-    "img_made/photo_2020-10-04_22-21-03.jpg",
-    "img_made/photo_2020-10-04_22-21-03 (2).jpg",
-    "img_made/photo_2020-10-04_22-21-04.jpg",
+    "img_made/photo_2020-10-04_22-21-02.jpg"
 ];
 
 function getRandomInt(max) {
