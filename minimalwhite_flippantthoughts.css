@@ -6,3 +6,6 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
  width:50%;
 }
+body {
+    font-size: 120%;
+}
