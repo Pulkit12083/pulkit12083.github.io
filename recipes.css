@@ -153,6 +153,9 @@ a:active {
 }
 body {
     font-size: 120%;
-    background-color: #0000;
+    color: white;
+    background-image:url("img_made/photo_2020-10-04_23-32-09.jpg");
+    background-repeat:repeat;
+    background-color: #00af;
   }
 }
