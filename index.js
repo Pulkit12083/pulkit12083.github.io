@@ -10,7 +10,6 @@ var img = [
     "img_made/photo_2020-05-05_03.15.59.jpeg",
     "img_made/imongrass.jpeg",
     "img_made/photo_2020-10-04_22-16-16.jpg",
-    "img_made/photo_2020-10-04_22-20-56.jpg",
     "img_made/photo_2020-10-04_22-21-01.jpg",
     "img_made/photo_2020-10-04_22-21-02.jpg"
 ];
@@ -21,9 +20,10 @@ function getRandomInt(max) {
 
 function imageClicked()
 {
-    counter=getRandomInt(img.length)
-    if (document.images["introPicture"].src.endsWith(img[counter])) {
-	counter=counter+1;
-    }
+//    counter=getRandomInt(img.length)
+//    if (document.images["introPicture"].src.endsWith(img[counter])) {
+//	counter=counter+1;
+    //    }
+    counter=counter+1;
     document.images["introPicture"].src = img[counter%img.length];
 }
