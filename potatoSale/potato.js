@@ -2,7 +2,7 @@ var potatoCounter = 0;
 var buyCounter = 0;
 
 var aMemeQuotes = [
-    "Hippos are fundamentall good beings",
+    "Hippos are fundamentally good beings",
     "Shut up don't interrupt me you narcissist. It's all about me, me, me",
     "I should probably report you to the authorities",
     "Who likes potatoes, you sick fuck",
