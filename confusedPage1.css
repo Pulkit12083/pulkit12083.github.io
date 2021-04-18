@@ -1,0 +1,26 @@
+body {
+ min-height: 100vh;
+ min-width: 100vw;
+}
+
+.bg-container {
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  transition: 0s;
+  opacity: 0;
+}
+
+.bg-container.active {
+  opacity: 1;
+}
+
+.bg-container-1 {
+  background-image: url("img_made/monotoneTrafficLights/vlcsnap-2021-04-18-18h59m17s658.png");
+}
+
+.bg-container-2 {
+  background-image: url("img_made/monotoneTrafficLights/vlcsnap-2021-04-18-18h59m20s393.png");
+}
