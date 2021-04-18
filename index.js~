@@ -1,9 +1,0 @@
-var counter = 0;
-function imageClicked()
-{
-    var img = []
-    img[0] = "img_made/hand.jpeg";
-    img[1] = "img_made/photo_2020-10-04_20-41-04.jpg";
-    counter++;
-    this.src = img[counter % img.length];
-}
