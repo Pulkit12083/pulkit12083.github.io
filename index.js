@@ -1,6 +1,7 @@
 var counter = 0;
 
 var img = [
+    "img_made/moi/spb_000051090003.jpg",
     "img_made/moi/IMG_20210315_210245.jpg",
     "img_made/moi/IMG_20210315_205108.jpg",
     "img_made/perchedonatree.jpeg",
