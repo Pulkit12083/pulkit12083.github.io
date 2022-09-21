@@ -1,3 +1,0 @@
-#go away bots
-User-agent: *
-Disallow: /
