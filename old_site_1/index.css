@@ -1,0 +1,50 @@
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ width:90%;
+}
+body {
+    font-size: 120%;
+    color: white;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    font-size: 64px;
+    color: white;
+}
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #393aac;
+  background-color: transparent;
+  text-decoration: underline;
+}
+img[name=introPicture]:hover
+{
+  cursor:pointer;
+}
