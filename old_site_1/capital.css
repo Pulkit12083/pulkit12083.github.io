@@ -1,0 +1,55 @@
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ width:50%;
+}
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #393aac;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+  .accordion {
+  background-color: #ff8380;
+  color: #222;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.0s;
+}
+
+.active, .accordion:hover {
+  background-color: #b6fff4; 
+}
+
+.panel {
+  padding: 0 5px;
+  display: none;
+  background-color: #b6e6ff;
+  overflow: hidden;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;}

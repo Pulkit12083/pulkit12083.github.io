@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head>
+  <title>potato</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link media="all" href="potato.css" type="text/css" rel="stylesheet">
+  <script src="potato.js">
+       /*    
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) 2014  Loic J. Duros
+
+        The JavaScript code in this page is free software: you can
+        redistribute it and/or modify it under the terms of the GNU
+        General Public License (GNU GPL) as published by the Free Software
+        Foundation, either version 3 of the License, or (at your option)
+        any later version.  The code is distributed WITHOUT ANY WARRANTY;
+        without even the implied warranty of MERCHANTABILITY or FITNESS
+        FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+        As additional permission under GNU GPL version 3 section 7, you
+        may distribute non-source (e.g., minimized or compacted) forms of
+        that code without the copy of the GNU GPL normally required by
+        section 4, provided you include this license notice and a URL
+        through which recipients can access the Corresponding Source.   
+
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+        */
+  </script> 
+  <style>
+  body {
+  margin: 5;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+</head>
+
+<pre>
+  <h1 style="color:white;font-family: Comic Sans MS, Comic Sans, cursive;font-size: 60px;"><b> POTATO SALE*
+      Support my radio jockey dream</b> </h1>
+    
+ <img src="img/potatoStripped.png" id="PotatoPicture" alt="Potato picture" width="350px" onclick="potatoClicked()">
+
+
+ <b><p style = "font-family:'Comic Sans MS',garamond,cursive;color:white;font-size:30px;font-style:italic;">Your basket contains <span id="potatoCountPrint"> NO customized potatoes.(Click on the above potato to add some) </span>
+ Your total is Rs<span id="potatoCountPrice"> 10 (base charge) </span></b>
+ <button class="button" id="buyButton" onclick="buyButtonClicked()"><b><span id="buyButtonText">BUY</b></span></button></p><hr>
+ <b><p style = "font-family:'Comic Sans MS',garamond,cursive;color:white;font-size:30px;font-style:italic;">"<span id="aMemeWisdom">i went out today for 5 seconds</span>"
+ - amemetadoy</p></b>
+ <img src="img/128memeta.gif" alt="Meme picture" width="450px"><hr>
+
+  <p style = "font-family:'Comic Sans MS',garamond,cursive;color:white;font-size:20px;font-style:italic;"><b>*(5% tax for stupid bitchasses)
+*(5% off if you can teleport effortlessly)</b></p>
+<a href="../index.html"> <*- go HOME</a>
+
+
+</pre>
+
+</body>
+</html>
