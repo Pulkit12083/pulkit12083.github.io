@@ -1,33 +1,76 @@
 <!DOCTYPE html>
-<html><head>
-  <title>koyal </title>
+<html lang="en">
+<head>
+  <title>koyal</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link media="all" href="minimalwhite.css" type="text/css" rel="stylesheet">
-    <style>
-  body {
-  background-image: url("img_made/IMG_20200708_174456440_HDR.jpeg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  }
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      background-image: url("img_made/IMG_20200708_174456440_HDR.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+    .content-box {
+      background-color: rgba(0, 50, 0, 0.8);
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .home-link {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .home-link:hover {
+      text-decoration: underline;
+    }
+    audio {
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem 0;
+    }
+    .title {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    .credits {
+      color: transparent;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .content-box {
+        padding: 1rem;
+      }
+    }
   </style>
-
 </head>
 
 <body>
-<pre>
-<font color="white">
-
-
-<a href="index.html">go home -><a>//
-<hr>
-<b>Mixing my neighborhood koyal with beats and a string instrument :)</b> 
+  <div class="content-box">
+    <a href="index.html" class="home-link">go home -></a>
+    <hr>
+    <div class="title">
+      <b>Mixing my neighborhood koyal with beats and a string instrument :)</b>
+    </div>
 
     <audio autoplay loop controls="controls">
       <source src="aud_made/koyalTaar.mp3">
     </audio>
 
- <p style="color:transparent;font-size:100%;"; >pulkit manocha</p>
-
-</pre>
-</font>
+    <p class="credits">pulkit manocha</p>
+  </div>
 </body>
+</html>
