@@ -1,33 +1,74 @@
 <!DOCTYPE html>
-<html><head>
-  <title>beats </title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link media="all" href="minimalwhite.css" type="text/css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats</title>
+    <link media="all" href="minimalwhite.css" type="text/css" rel="stylesheet">
     <style>
-  body {
-  background-image: url("img_made/adamSmith.jpeg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  }
-  </style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url("img_made/adamSmith.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
+        .container {
+            padding: 8px 16px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .home-link {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+
+        .title {
+            display: inline;
+            font-size: 1.2em;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+        }
+
+        .credits {
+            color: transparent;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-<pre>
-<font color="white">
-
-
-<a href="index.html">go home -><a>//
-    
-<b>chomsky has something to say to friedman</b> 
-
-    <audio controls="controls">
-      <source src="aud_made/FriedmanForgetsExternalities.mp3">
+    <div class="container">
+        <a href="index.html" class="home-link">go home →</a><br><br>
+        <strong>chomsky has something to say to friedman</strong>
+    </div>
+    <audio controls>
+        <source src="aud_made/FriedmanForgetsExternalities.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
-   
- <p style="color:transparent;font-size:100%;"; >pulkit manocha</p>
- 
-</pre>
-</font>
+    <p class="credits">pulkit manocha</p>
 </body>
+</html>
