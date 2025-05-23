@@ -38,44 +38,80 @@
       background-attachment: fixed;
       margin: 0;
       padding: 15px;
-      box-sizing: border-box;
+      line-height: 1.6;
+      font-size: 16px;
   }
+
   pre {
       white-space: pre-wrap;
       word-wrap: break-word;
-      max-width: 100%;
-      margin: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: inherit;
   }
+
   div.transbox {
-      margin: 10px 0;
-      background-color: #ffffff;
-      border: 0px solid black;
-      opacity: 0.7;
-      padding: 15px;
+      margin: 15px 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+      padding: 20px;
       display: none;
-      max-width: 100%;
-      box-sizing: border-box;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
+
+  button {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+  }
+
+  button:hover {
+      background-color: rgba(255, 255, 255, 1);
+  }
+
   audio {
-      max-width: 100%;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
   }
+
   img {
       max-width: 100%;
       height: auto;
   }
-  button {
-      max-width: 100%;
-      white-space: normal;
-      word-wrap: break-word;
-      padding: 10px;
-      margin: 10px 0;
+
+  a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px dotted #333;
   }
-  @media screen and (max-width: 768px) {
+
+  a:hover {
+      border-bottom: 1px solid #333;
+  }
+
+  @media (max-width: 600px) {
       body {
           padding: 10px;
+          font-size: 14px;
       }
+
       div.transbox {
-          padding: 10px;
+          padding: 15px;
+          margin: 10px 0;
+      }
+
+      button {
+          padding: 12px;
       }
   }
   </style>
@@ -83,13 +119,12 @@
 
 <body>
 <pre>
-
-<a href="../index.html">go home -><a>//
+<a href="../index.html">go home -></a>
 <div class="transbox" style="display:block;">Mixing sounds from my neighborhood, a cool glitchy recording by Larry Wendt, my local kabaadiwalahs and an announcement on the EDMC website.</div>
 <hr>
     <audio autoplay loop controls="controls">
       <source src="audio/DilliNagarNigamTakeFunf.flac">
-    </audio>    <img src="img_collected/recycleBin.png" height="50" name="introPicture" onclick="recycleBinClicked()" ">
+    </audio>    <img src="img_collected/recycleBin.png" alt="Recycle Bin" name="introPicture" onclick="recycleBinClicked()">
 
     <button onclick="toggleTrashyText()">How much do you know about the process and organization that takes away your trash from your vicinity?</button>
 <div class="transbox" id="trashyTextDiv" style="display:none;">
@@ -121,5 +156,5 @@ PS6: <a href="https://www.youtube.com/watch?v=vU9_AEpexHM" target="_blank">A cut
 </div>
 <p style="color:transparent;font-size:100%;"; >pulkit manocha</p>
 </pre>
-</font>
+
 </body>
