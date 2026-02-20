@@ -2,6 +2,7 @@
 <html><head>
   <title>Trashy</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link media="all" href="../minimalwhite.css" type="text/css" rel="stylesheet">
   <script src="trash.js">
         /*    
@@ -32,16 +33,61 @@
   <style>
   body {
       background-image: url("img_made/IMG_20210218_185110.jpg");
-      background-repeat:no-repeat;
-      background-size:cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+  }
+  pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin: 0;
+      font-family: inherit;
+      max-width: 800px;
+      width: 100%;
+      text-align: left;
   }
   div.transbox {
-      margin: 10px;
+      margin: 10px 0;
       background-color: #ffffff;
       border: 0px solid black;
       opacity: 0.7;
-      padding: 5px 5px 5px 5px;
-      display:none;
+      padding: 15px;
+      display: none;
+      max-width: 800px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  button {
+      max-width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      word-wrap: break-word;
+      white-space: normal;
+      cursor: pointer;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  audio {
+      max-width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+      body {
+          padding: 10px;
+          font-size: 14px;
+      }
+      div.transbox {
+          padding: 10px;
+          margin: 5px 0;
+      }
   }
   </style>
 </head>
@@ -49,12 +95,12 @@
 <body>
 <pre>
 
-<a href="../index.html">go home -><a>//
+<a href="../index.html">go home -></a>//
 <div class="transbox" style="display:block;">Mixing sounds from my neighborhood, a cool glitchy recording by Larry Wendt, my local kabaadiwalahs and an announcement on the EDMC website.</div>
 <hr>
     <audio autoplay loop controls="controls">
       <source src="audio/DilliNagarNigamTakeFunf.flac">
-    </audio>    <img src="img_collected/recycleBin.png" height="50" name="introPicture" onclick="recycleBinClicked()" ">
+    </audio>    <img src="img_collected/recycleBin.png" alt="Recycle Bin" name="introPicture" onclick="recycleBinClicked()">
 
     <button onclick="toggleTrashyText()">How much do you know about the process and organization that takes away your trash from your vicinity?</button>
 <div class="transbox" id="trashyTextDiv" style="display:none;">
@@ -86,5 +132,4 @@ PS6: <a href="https://www.youtube.com/watch?v=vU9_AEpexHM" target="_blank">A cut
 </div>
 <p style="color:transparent;font-size:100%;"; >pulkit manocha</p>
 </pre>
-</font>
 </body>
