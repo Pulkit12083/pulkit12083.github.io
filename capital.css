@@ -1,30 +1,75 @@
+/* Base styles */
+body {
+    background-color: #800000;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+hr {
+    border: 1px solid #FF8B03;
+    margin: 20px 0;
+}
+
+/* Typography */
+.quote {
+    color: #FF8B03;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.footer {
+    color: #800000;
+    margin-top: 30px;
+    text-align: right;
+}
+
+/* Legacy styles preserved */
 pre {
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
- width:50%;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    width: 50%;
 }
+/* Link styles */
 a:link {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+    color: #FF8B03;
+    background-color: transparent;
+    text-decoration: none;
 }
+
 a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
+    color: #FF8B03;
+    background-color: transparent;
+    text-decoration: none;
 }
+
 a:hover {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
+    color: #FF8B03;
+    background-color: transparent;
+    text-decoration: underline;
 }
+
 a:active {
-  color: #393aac;
-  background-color: transparent;
-  text-decoration: underline;
+    color: #FF8B03;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
   .accordion {
@@ -50,6 +95,18 @@ a:active {
   overflow: hidden;
 }
 
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    .content {
+        font-size: 1em;
+    }
+}
+
+/* Utility classes */
 .tooltip {
-  position: relative;
-  display: inline-block;}
+    position: relative;
+    display: inline-block;
+}

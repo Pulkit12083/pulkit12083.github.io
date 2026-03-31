@@ -1,20 +1,73 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>poems i like</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link media="all" href="minimalwhite.css" type="text/css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FFB6C1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+    .poem-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+    .poem-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .poem-author {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .poem-text {
+      margin-bottom: 1rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+    a:hover {
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+      .poem-container {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
-
-<body bgcolor="#FFB6C1">
-<pre>
+<body>
+<main>
 
 META: I'll post some poems I've found. I wanted to write poetry at some point but have said my farewell to it recently. 
-
+<br><br>
 <a href="index.html"><- return to the ground</a>
 
 <hr>
-<b>I like fiction</b>
-<i>(although does this really matter? isn't the literary author dead?)</i>
+<div class="poem-container">
+  <div class="poem-title">I like fiction</div>
+  <div class="poem-text"><i>(although does this really matter? isn't the literary author dead?)</i>
 
 I like fiction he said
 The lives of nonexistent he read
@@ -35,12 +88,14 @@ I like fiction he said
 And only fiction not reality he pled
 No dearth of coin, liquor and talk
 The street's ugliness must be adorned and read
-
-
+  </div>
+</div>
 <hr>
 
-<b>All Watched Over By Machines Of Loving Grace</b>
-Richard Brautigan
+<div class="poem-container">
+  <div class="poem-title">All Watched Over By Machines Of Loving Grace</div>
+  <div class="poem-author">Richard Brautigan</div>
+  <div class="poem-text">
 
 I like to think (and
 the sooner the better!)
@@ -69,12 +124,15 @@ returned to our mammal
 brothers and sisters,
 and all watched over
 by machines of loving grace.
-
+  </div>
+</div>
 <hr>
 
 
-<b>Tonight</b>
-by Agha Shahid Ali
+<div class="poem-container">
+  <div class="poem-title">Tonight</div>
+  <div class="poem-author">by Agha Shahid Ali</div>
+  <div class="poem-text">
 
     “Pale hands I loved beside the Shalimar”
                 —Laurence Hope
@@ -118,12 +176,14 @@ This is mere insult, this is no farewell tonight.
 
 And I, Shahid, only am escaped to tell thee—
 God sobs in my arms. Call me Ishmael tonight.
-
-
+  </div>
+</div>
 <hr>
 
-<b>When You Are Old</b>
-Wiliam Butler Yeats
+<div class="poem-container">
+  <div class="poem-title">When You Are Old</div>
+  <div class="poem-author">Wiliam Butler Yeats</div>
+  <div class="poem-text">
 
 When you are old and grey and full of sleep,
 And nodding by the fire, take down this book,
@@ -139,7 +199,9 @@ And bending down beside the glowing bars,
 Murmur, a little sadly, how Love fled
 And paced upon the mountains overhead
 And hid his face amid a crowd of stars.
+  </div>
+</div>
 <hr>
 
-</pre>
+</main>
 </body>
